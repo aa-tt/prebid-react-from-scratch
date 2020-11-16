@@ -4,15 +4,23 @@
   "description": "creating a react web app from no seed to demonstrate prebid integration",
   "main": "index.js",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "webpack-dev-server",
+    "build": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "anunay",
   "license": "ISC",
   "devDependencies": {
-    "react-scripts": "^3.2.0"
+    "@babel/cli": "^7.6.4",
+    "@babel/core": "^7.6.4",
+    "@babel/preset-env": "^7.6.3",
+    "@babel/preset-react": "^7.6.3",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.2.0",
+    "style-loader": "^1.0.0",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.9.0"
   },
   "dependencies": {
     "react": "^16.11.0",
